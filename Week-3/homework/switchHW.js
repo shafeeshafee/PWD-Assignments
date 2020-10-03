@@ -10,22 +10,28 @@
 
 // Make a default instructing option not available. 
 
-let grub = "Steak";
+let item = "Steak";
+let price = 0;
 
-switch (grub.toLowerCase()) {
+switch (item.toLowerCase()) {
     case "burger":
-        console.log(`$10`);
+        price = 10;
+        console.log(`$${price}`);
         break;
     case "steak":
-        console.log(`$25`);
+        price = 25;
+        console.log(`$${price}`);
         break;
     case "salmon":
-        console.log(`$20`);
+        price = 20;
+        console.log(`$${price}`);
     case "shrimp":
-        console.log(`$20`);
+        price = 20;
+        console.log(`$${price}`);
         break;
     case "chicken":
-        console.log(`$15`);
+        price = 15;
+        console.log(`$${price}`);
         break;
     default:
         console.log(`Sorry, we're fresh out!`);
